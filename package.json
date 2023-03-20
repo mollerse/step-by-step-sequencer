@@ -1,0 +1,35 @@
+{
+  "name": "diy-sequencer",
+  "version": "1.0.0",
+  "description": "Step-by-step instructions for building a step sequencer with js and webaudio",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "keywords": [
+    "workshop"
+  ],
+  "author": "Stian Møllersen <stian.moellersen@gmail.com>",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "prettier": "2.8.5",
+    "eslint": "8.36.0",
+    "vite": "4.2.0"
+  },
+  "prettier": {},
+  "eslintConfig": {
+    "plugins": [],
+    "extends": [
+      "eslint:recommended"
+    ],
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
+      rel="icon"
+      type="image/x-icon"
+    />
+    <title>Step-by-Step Sequencer</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --foreground: #ebebeb;
+        --background: #050505;
+        --accent: hotpink;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+
+        font-size: 2.5vw;
+        font-family: "DejaVu Sans", Helvetica, sans-serif;
+        background: var(--background);
+        color: var(--foreground);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body > * {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+      }
+
+      #play {
+        padding: 1vw;
+        font-size: inherit;
+        background-color: var(--foreground);
+        color: var(--background);
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .bpm-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        width: 50vw;
+      }
+
+      #pads {
+        --pad-width: 2.5vw;
+        --pad-margin: 0.25vw;
+
+        width: calc(16 * (var(--pad-width) + 2 * var(--pad-margin)));
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 1vh 0;
+      }
+
+      .pad {
+        width: var(--pad-width);
+        height: var(--pad-width);
+        margin: 0 var(--pad-margin);
+        border: 5px solid var(--foreground);
+        background-color: var(--foreground);
+      }
+
+      .on {
+        background-color: var(--accent);
+      }
+
+      [data-note="0"] [data-pad="0"],
+      [data-note="1"] [data-pad="1"],
+      [data-note="2"] [data-pad="2"],
+      [data-note="3"] [data-pad="3"],
+      [data-note="4"] [data-pad="4"],
+      [data-note="5"] [data-pad="5"],
+      [data-note="6"] [data-pad="6"],
+      [data-note="7"] [data-pad="7"],
+      [data-note="8"] [data-pad="8"],
+      [data-note="9"] [data-pad="9"],
+      [data-note="10"] [data-pad="10"],
+      [data-note="11"] [data-pad="11"],
+      [data-note="12"] [data-pad="12"],
+      [data-note="13"] [data-pad="13"],
+      [data-note="14"] [data-pad="14"],
+      [data-note="15"] [data-pad="15"] {
+        border-color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="index.js" charset="utf-8"></script>
+  </body>
+</html>
