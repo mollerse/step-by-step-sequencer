@@ -206,7 +206,7 @@ Given a BPM of `90` and a `notesPerBeat` of `4` your `beatLength` in seconds sho
 
 #### Hints
 
-Since the Web Audio Clock is given in second-resolution, converting from BPM to BPS will make it easier to work with. You can do that by dividing the BPM value by 60 to make it Beats per Second insead.
+Since the Web Audio Clock is given in second-resolution, converting from BPM to BPS will make it easier to work with. You can do that by dividing the BPM value by 60 to make it Beats per Second instead.
 
 To find the beat number given total time and the length of a beat you can do `Math.floor(t / beatLength)`.
 
