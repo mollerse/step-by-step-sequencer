@@ -281,10 +281,10 @@ This creates an array with `16` elements all set to `false`. Why `16`? Because t
 
 ```
 // init()
-padInput(pads, onClick)
+padInput(pads, onPadClick)
 ```
 
-The `onClick` callback for the `padInput` will call your callback function with the index of the pad that was clicked, you can then change the state of the pad in question in the callback.
+The `onPadClick` callback for the `padInput` will call your callback function with the index of the pad that was clicked, you can then change the state of the pad in question in the callback.
 
 ```
 function onPadClick(index) {
