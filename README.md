@@ -190,7 +190,7 @@ A high precision and robust timing is necessary to create audio that is able to 
 
 If you've spent any time with electronic music fans you've probably picked up the term "BPM", it stands for "Beats per Minute" and is a way to measure the tempo of a song.
 
-More traditional schools of music measure tempo using more subjective terms like "adagio" for "slow with great expression" and "allegro" for "fast and bright". In more recent years (1800s onwards, coinciding with the invention of the metronome) these terms have gotten a rough BPM estimate connected to them. See wikipedia for more fascinating info on [Tempo](https://en.wikipedia.org/wiki/Tempo).
+More traditional schools of music measure tempo using more subjective terms like "adagio" for "slow with great expression" and "allegro" for "fast and bright". In more recent years (1800s onwards, coinciding with the invention of the metronome) these terms have gotten a rough BPM estimate connected to them. See Wikipedia for more fascinating info on [Tempo](https://en.wikipedia.org/wiki/Tempo).
 
 We are going to stick with BPM for our purposes, since it is nice and precise which suits our programming brains.
 
