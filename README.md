@@ -222,7 +222,7 @@ Being able to track note and beat numbers makes it a lot easier to work in the s
 
 Now that we have a reliable way of counting notes and beats, let's take it a step further and play some sounds on the notes or beats. Let's make a simple metronome.
 
-To play sounds we need a simple synthesizer, fortunatly there is one inside the `nuts-and-bolts`-folder called `simple-synth`. You can import it like this:
+To play sounds we need a simple synthesizer, fortunately there is one inside the `nuts-and-bolts`-folder called `simple-synth`. You can import it like this:
 
 ```
 import SimpleSynth from "./nuts-and-bolts/simple-synth";
