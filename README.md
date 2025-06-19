@@ -184,7 +184,7 @@ You can (and probably should) pause the audio context by calling `audioContext.s
 
 ### Why are we doing this?
 
-A high precision and robust timing is neccessary to create audio that is able to keep a steady rhythm. The other clocks in the browser are not designed for or suited for this task.
+A high precision and robust timing is necessary to create audio that is able to keep a steady rhythm. The other clocks in the browser are not designed for or suited for this task.
 
 ## Tempo and BPM
 
