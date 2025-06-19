@@ -194,7 +194,7 @@ More traditional schools of music measure tempo using more subjective terms like
 
 We are going to stick with BPM for our purposes, since it is nice and precise which suits our programming brains.
 
-There are a few other things we need to decide aswell. We usually divide a beat into segments or notes. This roughly corresponds to the time signature of sheet music. A "4/4" timesignature indicates we are playing 4 quarter notes per bar. Similarly we can say that we want to play 4 notes per beat, but the length of our notes will be derived from the BPM.
+There are a few other things we need to decide as well. We usually divide a beat into segments or notes. This roughly corresponds to the time signature of sheet music. A "4/4" timesignature indicates we are playing 4 quarter notes per bar. Similarly we can say that we want to play 4 notes per beat, but the length of our notes will be derived from the BPM.
 
 ### Assignment
 
