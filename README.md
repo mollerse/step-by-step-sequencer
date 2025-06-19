@@ -176,7 +176,7 @@ This gives you a function which takes two functions as arguments. The first one 
 
 Create an audio context and use the `playPauseButton` to resume it's state.
 
-Create a variable to contain the total time passed in the loop. To do this you'll want to keep a record of when the loop got started and then take a reading of the clock on each turn of the loop.
+Create a global variable, `t`, to contain the total time passed in the loop. To do this you'll want to keep a record of when the loop got started and then take a reading of the clock on each turn of the loop.
 
 #### Hints
 
