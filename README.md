@@ -37,7 +37,7 @@ This will give us the basic tooling we need to get a development workflow starte
 
 All the code we are going to be writing today will be in JavaScript. If you want you can write all the code in `index.js`, or you can break things up in modules if that suits you better. `vite` will handle most things fine.
 
-Once you have all the dependencies installed, you can verify that everything is woring fine by running:
+Once you have all the dependencies installed, you can verify that everything is working fine by running:
 
 ```
 npm start
