@@ -37,7 +37,7 @@ This will give us the basic tooling we need to get a development workflow starte
 
 All the code we are going to be writing today will be in JavaScript. If you want you can write all the code in `index.js`, or you can break things up in modules if that suits you better. `vite` will handle most things fine.
 
-Once you have all the dependencies installed, you can verify that everything is woring fine by running:
+Once you have all the dependencies installed, you can verify that everything is working fine by running:
 
 ```
 npm start
@@ -176,7 +176,7 @@ This gives you a function which takes two functions as arguments. The first one 
 
 Create an audio context and use the `playPauseButton` to resume it's state.
 
-Create a variable to contain the total time passed in the loop. To do this you'll want to keep a record of when the loop got started and then take a reading of the clock on each turn of the loop.
+Create a global variable, `t`, to contain the total time passed in the loop. To do this you'll want to keep a record of when the loop got started and then take a reading of the clock on each turn of the loop.
 
 #### Hints
 
@@ -184,17 +184,17 @@ You can (and probably should) pause the audio context by calling `audioContext.s
 
 ### Why are we doing this?
 
-A high precision and robust timing is neccessary to create audio that is able to keep a steady rythm. The other clocks in the browser are not designed for or suited for this task.
+A high precision and robust timing is necessary to create audio that is able to keep a steady rhythm. The other clocks in the browser are not designed for or suited for this task.
 
 ## Tempo and BPM
 
 If you've spent any time with electronic music fans you've probably picked up the term "BPM", it stands for "Beats per Minute" and is a way to measure the tempo of a song.
 
-More traditional schools of music measure tempo using more subjective terms like "adagio" for "slow with great expression" and "allegro" for "fast and bright". In more recent years (1800s onwards, coinciding with the invention of the metronome) these terms have gotten a rough BPM estimate connected to them. See wikipedia for more fascinating info on [Tempo](https://en.wikipedia.org/wiki/Tempo).
+More traditional schools of music measure tempo using more subjective terms like "adagio" for "slow with great expression" and "allegro" for "fast and bright". In more recent years (1800s onwards, coinciding with the invention of the metronome) these terms have gotten a rough BPM estimate connected to them. See Wikipedia for more fascinating info on [Tempo](https://en.wikipedia.org/wiki/Tempo).
 
 We are going to stick with BPM for our purposes, since it is nice and precise which suits our programming brains.
 
-There are a few other things we need to decide aswell. We usually divide a beat into segments or notes. This roughly corresponds to the time signature of sheet music. A "4/4" timesignature indicates we are playing 4 quarter notes per bar. Similarly we can say that we want to play 4 notes per beat, but the length of our notes will be derived from the BPM.
+There are a few other things we need to decide as well. We usually divide a beat into segments or notes. This roughly corresponds to the time signature of sheet music. A "4/4" timesignature indicates we are playing 4 quarter notes per bar. Similarly we can say that we want to play 4 notes per beat, but the length of our notes will be derived from the BPM.
 
 ### Assignment
 
@@ -222,7 +222,7 @@ Being able to track note and beat numbers makes it a lot easier to work in the s
 
 Now that we have a reliable way of counting notes and beats, let's take it a step further and play some sounds on the notes or beats. Let's make a simple metronome.
 
-To play sounds we need a simple synthesizer, fortunatly there is one inside the `nuts-and-bolts`-folder called `simple-synth`. You can import it like this:
+To play sounds we need a simple synthesizer, fortunately there is one inside the `nuts-and-bolts`-folder called `simple-synth`. You can import it like this:
 
 ```
 import SimpleSynth from "./nuts-and-bolts/simple-synth";
@@ -281,10 +281,10 @@ This creates an array with `16` elements all set to `false`. Why `16`? Because t
 
 ```
 // init()
-padInput(pads, onClick)
+padInput(pads, onPadClick)
 ```
 
-The `onClick` callback for the `padInput` will call your callback function with the index of the pad that was clicked, you can then change the state of the pad in question in the callback.
+The `onPadClick` callback for the `padInput` will call your callback function with the index of the pad that was clicked, you can then change the state of the pad in question in the callback.
 
 ```
 function onPadClick(index) {
