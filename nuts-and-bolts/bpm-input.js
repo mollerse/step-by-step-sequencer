@@ -41,4 +41,6 @@ export default function bpmInput(initialValue, onChange) {
 
     onChange(newValue);
   });
+
+  onChange(initialValue);
 }
